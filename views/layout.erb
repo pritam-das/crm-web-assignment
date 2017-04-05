@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link href="/styles.css" rel="stylesheet" type="text/css" >
+  </head>
+  <header><h1> Bitmaker CRM </h1></header>
+
+
+  <body>
+    <%= yield %>
+    <p class="contact_number">There are <strong>3</strong> contacts</p>
+<div class= "contact_list"
+    <ul >
+    <% Contact.all.each do |contact| %>
+      <li class="each_contact"><%= contact.first_name %> <%= contact.last_name %>(<%= contact.email%>)</li>
+      <a class="edit" href="/">Edit</a>
+      <a class="delete" href="/">Delete</a>
+    <% end %>
+    </ul>
+
+  </body>
+  <footer>
+    <p>Copyright Bitmaker 2016 </p>
+  </footer>
+</html>

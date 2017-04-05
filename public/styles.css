@@ -1,0 +1,109 @@
+*, *::before, *::after /*when applying the box-sizing rule, apply it like this*/
+{
+  box-sizing: border-box;
+/* applies the box sizing rule to every element of the doc*/
+}
+
+header
+{
+    font-size: 26px;
+    color: white;
+    background-color: black;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+nav
+{
+    position: relative;
+
+}
+
+.top_list
+{
+  display: block;
+  font-size: 20px;
+  color: white;
+  background-color: grey;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 2px;
+}
+
+body
+{
+  position: relative
+}
+
+.contact_number
+{
+        display: block;
+        width: 60%;
+        position: relative;
+        left: 250px;
+
+        font-size: 20px;
+        color: black;
+        background-color: orange;
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        text-align: left;
+}
+
+div
+{
+  position: relative;
+}
+
+ul
+{
+  list-style: none;
+
+}
+
+.each_contact
+{
+  display: block;
+  width: 60%;
+  height: 75px;
+  position: relative;
+  left: 250px;
+  font-size: 20px;
+  color: black;
+  background-color: teal;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  text-align: left;
+}
+
+.edit
+{
+  position: relative;
+  left: 20.5%;
+  top: -25px;
+}
+
+.delete
+{
+  position: relative;
+  left: 20.5%;
+  top: -25px;
+}
+
+footer
+{
+  font-size: 26px;
+  color: white;
+  background-color: black;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
