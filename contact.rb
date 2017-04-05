@@ -30,6 +30,9 @@ attr_accessor :first_name, :last_name, :email, :note
     end
   end
 
+def self.number
+  @@contacts.size
+end
   # This method should accept an id as an argument
   # and return the contact who has that id
   def self.find(id)
@@ -85,8 +88,7 @@ end
   # This method should delete the contact
   # HINT: Check the Array class docs for built-in methods that might be useful here
   def delete
-    @@contacts.delete(self)
-    puts "The contact has been succesfully deleted!"
+     @@contacts.delete_if { |contact| contact.id == self.id }
   end
 
   # Feel free to add other methods here, if you need them.
