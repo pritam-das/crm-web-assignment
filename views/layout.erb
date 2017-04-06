@@ -9,14 +9,20 @@
 
 
   <body>
+    
+      <nav>
+            <a class="top_list" href="/">Home</a>
+            <a class="top_list" href="/contacts/new">Add a Contact</a>
+            <a class="top_list" href="/">About</a>
+      </nav>
     <%= yield %>
-    <p class="contact_number">There are <strong><%=Contact.number%></strong> contacts</p>
+    <p class="contact_number">There are <strong></strong> contacts</p>
 <div class= "contact_list"
     <ul >
     <% Contact.all.each do |contact| %>
       <a href="/contacts/<%=contact.id%>"
       <li class="each_contact"><%= contact.first_name %> <%= contact.last_name %>(<%= contact.email%>)</li></a>
-      <a class="edit" href="/">Edit</a>
+      <a class="edit" href="/contacts/<%=contact.id%>/edit">Edit</a>
       <a class="delete" href="/">Delete</a>
     <% end %>
     </ul>

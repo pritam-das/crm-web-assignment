@@ -121,6 +121,30 @@ ul
   text-align: center;
 }
 
+.edit_contact
+{
+
+  display: block;
+  width: 60%;
+  height: 300px;
+  position: relative;
+  left: 250px;
+  font-size: 20px;
+  color: white;
+  background-color: darkblue;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px
+
+
+}
+
+.edit_contact_form
+{
+ text-align: center;
+}
+
 footer
 {
   font-size: 26px;
